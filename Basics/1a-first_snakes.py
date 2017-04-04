@@ -1,3 +1,7 @@
+# Python - From Zero to Hero
+
+
+
 # Code is text, but it's text you pop into another program 
 # (called either a compiler # or interpreter) that let's you run it and do something
 # Python is a language that uses an interpreter
@@ -55,19 +59,41 @@ a_list_of_numbers = [1,2,3,4]
 a_list_of_words = ["hi", "I'm", "Jennings", "How", "are", "you", "?"]
 a_list_of_floats = [1.0, 2.0, 3.0, 4.0]
 a_list_of_bools = [True, True, False, False]
+a_list_of_multiple_things = ["one", 2, 3.0]
 # In python, Lists (or as they are generally called across programming languages: Arrays) are just that:
-# lists of things
+# lists of things, there are many rules for lists and their parallel structures in each language
+# Just know that in python, lists can lists of anything
 
 
 ##### Operators ###########################################################################################
-
+# Now that we have the individual tools available to us, we might want to actually perform operations of them:
+addition = 1 + 1 
+subtraction = 24.4 - 43.0
+division = 2.0 / 34.0
+multiplication = 4*0
+modulus = 9%2 #Modulus gives you the remainder of 9/2, so 9%2 = 1
 
 ###### Control Statements #################################################################################
+# Alright, so now we have all these fancy variables and containers for them, how do we actually do this
+# "Programming" Business? Well let's introduce if/else statements via a couple examples below:
+
+if True:
+	#Do Something
+else:
+	#Do something Else
+
+
+condition = True
+if condition
+
 
 ###### Loops ##############################################################################################
 
 ###### Functions ##########################################################################################
+# Functions are really the bread and butter of coding
+
+if __name__ == "__main__":
+	if []:
+		print("green")
 
 
-
-###### Libaries ###########################################################################################
