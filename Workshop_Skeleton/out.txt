@@ -1,0 +1,96 @@
+
+
+
+'''
+Python Comments are done via the '#' sign or with triple quotes (double or single)
+It's generally advised to use the # sign because you you can sometimes use triple 
+for strings occasionally
+'''
+
+"""
+Python doesn't use semi-colons to separate lines, it merely uses consistent
+spacing, so much like you can have something like this:
+"""
+
+
+if True:
+	print("hi")
+	print("bye")
+	for i in range(10):
+		print("Hi again")
+
+
+
+
+variable_have_no_type_when_declared = "Indeed"
+integers = 0
+decimal_numbers_are_floats = 5.0
+booleans = True
+booleans = "You can reuse variables freely/assign them freely between any types"
+
+
+
+
+list1 = [] # make an empty list
+list2 = [1,2,3,4]
+list3 = ["one", 2, 3.0]
+
+
+dictionary1 = {} 
+dictionary1["hi"] = "bye" #We map "hi" to "bye"
+dictionary1[1] = 2
+
+dictionary2 = {"key":"value", 1:2, "one":"two"} # we can also create dicts.
+
+
+if True:
+	print("True")
+else:
+	print("False")
+
+value = True
+if value:
+	print("Hi")
+elif not value:
+	print("Hello")
+else:
+	print ("Bye")
+
+
+for item in list2:
+	print(i)
+
+
+
+array = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+for i in range(1,10):
+	# This will print the array by accessing each entry
+	print(array[i])
+
+
+for falcon in array:
+	print(falcon)
+
+
+def functionName(input1, input2):
+	print(input1)
+	# Do all your function mumbo-jumbo here
+	# All of it
+	return #You can return nothing or something!
+
+def functions_can_return_multiple_things(input1, input2):
+	return input1, input2
+
+
+
+
+
+
+if __name___ == "__main__":
+	#You do your code here!
+
+
+
+
+
+
