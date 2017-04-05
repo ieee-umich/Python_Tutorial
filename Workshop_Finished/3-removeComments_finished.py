@@ -5,23 +5,23 @@ import re
 
 def removeComments(inFile, outFile):
 	
+	# This string goes into the re.match function, it matches all lines
+	# that start with the '#' Symbol
 	commentExp = "^\#.+"
 
-	inObj = open(inFile, 'r')
-	outObj = open(outFile, 'w')
+	#Opens a file to read/write from
+	inObj = open(inFile, 'r') # The file to read datafrom
+	outObj = open(outFile, 'w') #The file to write the data out to
 
-	for line in inObj:
-		if not re.match(commentExp, line):
-			print(line)
-			outObj.write(line)
+	for line in inObj: #We have access to the infile, so now we loop for it, line by line
+		if not re.match(commentExp, line): # if the line doesn't match the commentExp
+			print(line) # We print the line (so we can see it)
+			outObj.write(line) #And we write it into our outfile
 
+	# Close the files because we're done editing them.
 	inObj.close()
 	outObj.close()
 	return
-
-
-
-
 
 if __name__ == "__main__":
 	inputFile = "../Basics/1b-nutshell.py"
