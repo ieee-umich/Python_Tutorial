@@ -10,53 +10,15 @@ import unittest # <- Yeah this one
 # too hard.
 
 def runTests(folderPath):
-	outputList = []
-
-	files = glob.glob(os.path.join(folderPath, "*.cpp"))
-	flags = ["g++", "-O3", "-pedantic", "-Werror",  "-o", "testout"] 
-
-	for file in files:
-		try:
-			compileCommand = flags + [file]
-			subprocess.check_call(compileCommand)
-			executeCommand = ["./testout"]
-
-			output = subprocess.check_output(executeCommand)
-			# print(output)
-			outputList.append(str(output.strip(), 'utf-8'))
-
-		except subprocess.CalledProcessError:
-			print(file + " failed")
-			outputList.append("|"+file+"|" + " Failed")
-	return outputList
+	return
 
 def getSolutions(filepath):
-	inObj = open(filepath, 'r')
-	solutionList = inObj.read().split('\n')
-	# print(solutionList)
-	return solutionList
+	return
 
 def compareLists(testcaseList, solutionList):
-	if len(testcaseList) != len(solutionList):
-		print("list lengths are not consistent")
-		return
-	else:
-		numPassed = 0
-		numCases = len(testcaseList)
-
-		for i in range(numCases):
-			if testcaseList[i] == solutionList[i]:
-				numPassed+=1
-			else:
-				print("failed case:" + str(i))
-		print("Passed: " + str(numPassed) +'/'+ str(numCases) + " cases.")
-		return numPassed
+	return
 
 def main():
-	outputList = runTests("../cppSample/testcases")
-	solutionList = getSolutions("../cppSample/answers/answers.txt")
-	compareLists(outputList, solutionList)
-
 	return
 
 

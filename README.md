@@ -20,7 +20,7 @@ This is meant to be a tutorial as presented to crowd, so here's the general flow
 
 3.  Part 3 is a basic python script that takes the one of the files from part 1 and removes all the comments.  It's fairly simple, so you can either 
 
-4.  Part 4 is a kind of "autograder" mostly using Python's built-in unit testing suite.
+4.  Part 4 is a kind of "autograder" mostly using Python's built-in sub-process libraries. This is aimed at beginners, so the initial version doesn't directly address things like unittest. But that would be something worth developing as time goes on.
 
 
 #### **Credits**
